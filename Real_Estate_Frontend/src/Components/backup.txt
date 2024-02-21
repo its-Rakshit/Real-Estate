@@ -1,0 +1,73 @@
+<div className="row">
+                    <div className="col-5" id="image-container">
+                        {/* Image */}
+                    </div>
+                    <div className="col-6">
+                        <div className="heading">
+                            <h3>GOLDEN VALLEY</h3>
+                            <p>Residential land / Plot in Bangalore Highway, Hyderabad</p>
+                        </div>
+                        <div className="d-flex" id="details-01">
+                            <div className="price">
+                                <h4>₹ 17.01L</h4>
+                                <p>₹ 1,162/sqft</p>
+                            </div>
+                            <div className="size">
+                                <h4>1,458 sqft (135 sqm)</h4>
+                                <p>Plot Area</p>
+                            </div>
+                            <div className="type">
+                                <h4>Appartment</h4>
+                                <p>Ready to move in</p>
+                            </div>
+                        </div>
+                        <div className="discription">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium expedita blanditiis veniam fuga quasi labore adipisci facilis soluta sed beatae quo unde, quidem laboriosam quod, consectetur eligendi est. Eius, voluptas.</p>
+                        </div>
+                        <div className="d-flex"  id="details-02">
+                            <div className="d-flex" id="details-03">
+                                <p className='p-0 m-0'>Uploaded By:-</p>
+                                <h4>Ram.S.M</h4>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-info">Add to watch List</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-success">Assign an Agent</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+
+<div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="Villa"
+                  id="villaCheckbox"
+                  onChange={handleCheckboxChangesubloaction}
+                />
+                <label className="form-check-label" htmlFor="villaCheckbox">
+                  Villa
+                </label>
+              </div>
+
+
+
+const subLocations = (string) => {
+    const stringList = subLocationsList.map(String);
+    if (stringList.includes(string)) {
+    } else {
+      setsubLocationsList((prevData) => {
+        if (!prevData.includes(string)) {
+          return [...prevData, string];
+        }
+        return prevData;
+      });
+    }
+  };

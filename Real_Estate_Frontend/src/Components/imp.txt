@@ -1,0 +1,162 @@
+<div className="filter d-flex flex-column">
+          <div className="text-center">
+            <h1>Fillter</h1>
+          </div>
+
+          <div className="price-fillter">
+            <h3>Budget</h3>
+            <div>
+              <input
+                className="mt-2 w-75 "
+                type="range"
+                id="slider"
+                name="slider"
+                min="01"
+                max="100"
+                value={filterprice}
+                onChange={handleChange}
+              />
+            </div>
+            <label htmlFor="slider">{filterprice}</label> Lakhs
+          </div>
+
+          <div className="category-fillter">
+            <h3>Categories</h3>
+            <div className="checkbox text-start">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="Villa"
+                  id="villaCheckbox"
+                  onChange={handleCheckboxChange}
+                />
+                <label className="form-check-label" htmlFor="villaCheckbox">
+                  Villa
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="1BHK"
+                  id="oneBHKCheckbox"
+                  onChange={handleCheckboxChange}
+                />
+                <label className="form-check-label" htmlFor="oneBHKCheckbox">
+                  1BHK
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="2BHK"
+                  id="twoBHKCheckbox"
+                  onChange={handleCheckboxChange}
+                />
+                <label className="form-check-label" htmlFor="twoBHKCheckbox">
+                  2BHK
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="3BHK"
+                  id="threeBHKCheckbox"
+                  onChange={handleCheckboxChange}
+                />
+                <label className="form-check-label" htmlFor="threeBHKCheckbox">
+                  3BHK
+                </label>
+              </div>
+            </div>
+            <p>Selected Categories: {selectedCategories.join(", ")}</p>
+          </div>
+
+          <div className="price-fillter">
+            <h3>Area</h3>
+            <p>Sq.ft</p>
+            <div>
+              <input
+                className="mt-2 w-75 "
+                type="range"
+                id="slider"
+                name="slider"
+                min="01"
+                max="4000"
+                value={filterarea}
+                onChange={handleChangearea}
+              />
+            </div>
+            <label htmlFor="slider">{filterarea}</label> Sq.ft
+          </div>
+
+          <div className="status-fillter mt-5 text-center">
+            <h3>Construction Status</h3>
+            <div className="checkbox text-start">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="Ready to Move"
+                  id="Ready to Move"
+                  onChange={handleCheckboxChangestatus}
+                />
+                <label className="form-check-label" htmlFor="Ready to Move">
+                  Ready to Move
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="Under Construction"
+                  id="Under Construction"
+                  onChange={handleCheckboxChangestatus}
+                />
+                <label
+                  className="form-check-label"
+                  htmlFor="Under Construction"
+                >
+                  Under Construction
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value="Yet to Construct"
+                  id="Yet to Construct"
+                  onChange={handleCheckboxChangestatus}
+                />
+                <label className="form-check-label" htmlFor="Yet to Construct">
+                  Yet to Construct
+                </label>
+              </div>
+            </div>
+            <p>Selected Status: {selectedStatus.join(", ")}</p>
+          </div>
+          {/* Sub Locality */}
+          <div className="sublocality-fillter text-center mt-5 ">
+            <h3>Sub Locations</h3>
+            <div className="checkbox text-start">
+              {subLocationsList.map((ele) => (
+                <div className="form-check" key={ele}>
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value={ele}
+                    id={ele}
+                    onChange={handleCheckboxChangesubloaction}
+                  />
+                  <label className="form-check-label" htmlFor={ele}>
+                    {ele}
+                  </label>
+                </div>
+              ))}
+            </div>
+            <p>Selected Locality: {filterSubLocations.join(", ")}</p>
+          </div>
+        </div>

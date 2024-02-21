@@ -1,0 +1,125 @@
+.filter {
+    height: fit-content;
+    width: 25vw;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1,
+h3 {
+    color: black;
+}
+
+.price-fillter,
+.category-fillter,
+.status-fillter,
+.sublocality-fillter {
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-check-input {
+    margin-top: 3px;
+   
+}
+
+
+.form-check-label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+input[type="range"] {
+    width: 100%;
+}
+
+.search-cards {
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.card-container {
+    height: 40vh;
+    margin-top: 2vh;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+#image-container {
+    height: 30vh;
+    margin-left: 10px;
+}
+
+
+.discription {
+    line-height: 2.2vh;
+    overflow: hidden;
+}
+
+#details-01 {
+    justify-content: space-between;
+}
+
+#details-02 {
+    justify-content: space-between;
+}
+
+#details-03 {
+    justify-content: center;
+
+}
+
+.price-fillter {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.category-fillter {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.checkbox {
+    margin-left: 40%;
+}
+
+.image-container_img {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    font-size: 20px;
+    font-family: "ubunto sans-serif";
+    text-align: center;
+}
+
+.btn-info,
+.btn-success {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.h5{
+    text-align: center;
+}

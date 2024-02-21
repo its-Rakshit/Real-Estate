@@ -1,0 +1,31 @@
+.login-background {
+    background: url("https://img.freepik.com/free-vector/inheritance-concept-illustration_114360-14894.jpg?w=996&t=st=1708159427~exp=1708160027~hmac=e58ad9ae065881a6bfd851ecea84be6b62193caa6b7570fa287b29ad96c9d9b5") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 60px;
+    border-radius: 13px;
+    color:white;
+    text-shadow: 2px 1px white;
+}
+
+.form-control, .btn {
+   border-radius: 15px; 
+}
+
+#eye{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.register{
+    text-decoration: none;
+}
+

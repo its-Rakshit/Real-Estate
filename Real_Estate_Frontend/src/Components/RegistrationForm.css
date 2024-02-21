@@ -1,0 +1,10 @@
+.image{
+    background-image: url("https://img.freepik.com/free-vector/realty-agent-holding-keys-standing-near-building-isolated-flat-vector-illustration-cartoon-woman-house-sale_74855-8548.jpg?w=1060&t=st=1708161518~exp=1708162118~hmac=bf6f97a3db50690d60474ae7e5ddf902fd7d78a22020e13e3b47a0545cd04334");
+    background-size: contain;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.submit{
+    margin-left: 38vw;
+}

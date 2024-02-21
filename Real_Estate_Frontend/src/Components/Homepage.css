@@ -1,0 +1,45 @@
+#hero-container{
+    height: 80vh;
+    width: 100vw;
+    background-color: #D1DFE8;
+    background-image: url("https://img.freepik.com/free-vector/real-estate-searching_52683-46407.jpg?w=996&t=st=1708074024~exp=1708074624~hmac=3ef9c7d54aa4dc646ddd60e3250a01df3c4532f253616fc20fe451a53b27c157");
+    z-index: 1;
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position: center;
+
+}
+
+#search-bar-container{
+    background-color: white;
+}
+
+#searchQuery{
+    border-radius: 0px;
+    margin: 0px;
+
+}
+/* .hero-section{
+    background-color: #D1DFE8;
+} */
+.search{
+    position:absolute;
+    margin-left: 20vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 13px;
+    opacity: 90%;
+}
+.description{
+    margin-bottom: 30px;
+}
+.bi{
+    display: block;
+    margin: auto;
+}
+.quote{
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: 20vh;
+    background-color: white;
+}

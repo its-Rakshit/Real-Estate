@@ -1,0 +1,19 @@
+.naav{
+    background-color: #D1DFE8;
+}
+.navbar-brand{
+    margin-left: 3vw;
+    text-decoration: none;
+}
+
+#navbarsExample02{
+   margin-left: 100vh;
+}
+.btn{
+    border: none;
+   outline: none;
+}
+.nav-link{
+    border-color: black;
+    box-shadow: none;
+}
